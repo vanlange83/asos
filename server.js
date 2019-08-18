@@ -32,9 +32,6 @@ app.get('/', (req, res) => {
     res.render('home');
 })
 
-app.get('/contact', (req, res) => {
-    res.render('contact');
-})
 
 
 app.listen(PORT, () => { console.log('Server is running...')});

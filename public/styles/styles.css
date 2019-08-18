@@ -54,14 +54,57 @@ table {
 
 
 
+.menu {
+    font-size: 1.8rem;
+    margin-left: 10px;
+    display: inline-block;
+    width: 65%;
+}
 
+.search-bar {
+    border-radius: 20px;
+    width: 55%;
+    height: 35px;
+    border: none;
+    display: absolute;
+    padding: 10px;
+    font-size: .9rem;
+    margin-left: 20px;
+}
 
+.menu-list {
+    display: inline;
+    font-size: .9rem;
+    font-family: sans-serif;
+}
 
+.menu-list:last-child {
+    margin-left: 3px;
+}
+
+.menu .menu-list:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.menu-buttons {
+    position: absolute;
+    right: 4px;
+    top: 30%;
+
+}
 
 header {
     background-color: rgb(26, 22, 22);
     color: white;
     height: 100px;
+    box-shadow: 5px 2px 3px rgb(29, 29, 29);
+    display: flex;
+    align-items: center;
+}
+
+header > input {
+    padding-left: 20px;
 }
 
 .header-container {
@@ -69,16 +112,84 @@ header {
     width: 100%;
 }
 
-h1 {
-    color: red;
+.logo {
+    color: rgb(111, 73, 148);
+    font-size: 2.1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+.hover-list {
+    width: 300px;
+    display: none;
+    background-color: rgb(26, 22, 22);
+    color: black;
+    position: absolute;
+    top:40px;
+    z-index: 1;
+    box-shadow: 5px 2px 3px rgb(29, 29, 29);
+}
+
+.hover-list a {
+    color: blue;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    width: 400px;
+}
+
+.hover-list a:visited {
+    color: rgb(248, 242, 248);
+}
+
+.hot-styles {
+    display: inline-block;
+    position: relative; 
+    width: 200px;
+}
+
+
+
+.logo:hover {
+    cursor: pointer;
+}
+
+
+.hot-styles:hover .hover-list{
+    display: block;
+}
+
+.hover-list:hover .hot-styles {
+    background-color: rgba(7, 7, 7, 0.8);
+}
+
+.hover-list a:hover .hot-styles {
+    color: white;
+}
+
+.hover-list .hover-item:hover {
+    color: rgb(122, 101, 143);
+}
+
+
+
+button {
+    border-radius: 2px;
 }
 
 .header-container button {
+    font-size: 1rem;
     border: none;
     background-color: rgb(107, 60, 155);
-    width: 100px;
+    width: 90px;
     padding: 10px 20px;
     color: white;
+}
+
+.header-container button:hover {
+    background-color: rgb(66, 37, 95);
 }
 
 a {
@@ -90,16 +201,26 @@ a:visited {
     color: white;
 }
 
-.login-button {
-    color: red;
-    background-color: darkblue;
+
+#login-button:hover {
+    cursor: pointer;
 }
+
+#signin-button {
+    cursor: pointer;
+}
+
+
 
 .login-form {
     margin: auto;
     max-width: 40%;
     display: none;
     border: 1px solid blue;
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
 }
 
 .signin-form {
@@ -107,16 +228,78 @@ a:visited {
     max-width: 40%;
     display: none;
     border: 1px solid blue;
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
 }
 
 #splash {
     background-image: url('../images/splashImage.jpg');
     background-size: cover;
-    height: 600px;
+    height: 800px;
     width: 100%;
 }
 
 footer {
-    height: 500px;
+    position: relative;
+    height: 450px;
     background-color: rgb(219, 219, 219);
+    font-family: sans-serif;
+    letter-spacing: 1.5px;
+    color: rgb(110, 105, 105);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding: 50px 10px 30px 10px;
+}
+
+.footer-container a {
+    color: rgb(110, 105, 105);
+    font-size:.8rem;
+}
+
+.footer-container li {
+    padding-bottom: 10px;
+}
+
+.footer-container a:hover {
+    color: rgba(0, 0, 238, .5);
+    cursor: pointer;
+}
+
+.footer-heading {
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.footer-heading {
+    text-transform: uppercase;
+}
+
+.menu-padding {
+    padding-left: 15%;
+}
+
+#author {
+    padding:20px;
+    height:20px;
+    background-color: rgb(199, 193, 193);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+    #login-button {
+        position: relative;
+        top: 70px;
+    }
+    #signin-button {
+        position: relative;
+        top: 70px;
+    }
 }
