@@ -72,7 +72,94 @@
     padding-top: 20px;
 }
 
-.side-nav-footer {
-    background-color: rgb(245, 245, 245);
+.nav-socials {
+    margin-top: 7px!important;
+    padding-top: 5px!important; 
+    padding-bottom: 5px!important; 
 }
 
+.side-nav-login h5 {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+
+}
+
+.nav-join {
+    border-left: 1px solid grey;
+    padding-left: 10px;
+}
+
+
+
+.side-nav-login h5:hover {
+    color: rgb(113, 131, 235);
+    cursor: pointer;
+}
+
+.side-nav-account h5{
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+    padding: 10px 10px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.side-nav-account h5:hover {
+    color: rgb(113, 131, 235);
+    cursor: pointer;
+}
+
+.side-nav-account-container {
+    background-color: rgb(252, 252, 252);
+}
+
+.side-nav-footer {
+    background-color: rgba(212, 212, 212, 0.3);
+    padding-top: 10px;
+}
+
+.info-section {
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+    width: 100%;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    position: relative;
+}
+
+
+
+.info-section p {
+    display: inline-block;
+    padding: 10px 10px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.plus {
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.change {
+    margin-bottom: 0px;
+    padding: 10px 0px 10px 20px;
+    font-size: 14px; 
+    width: 150px;
+}
+
+.change:hover {
+    color: rgb(113, 131, 235);
+    cursor: pointer;
+}
