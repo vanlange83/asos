@@ -3,7 +3,7 @@ const express = require('express');
 const hbs = require('hbs');
 const path = require('path');
 const bodyParser =require('body-parser');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 const app = express();
 
@@ -23,10 +23,10 @@ app.use(express.static(srcPath));
 //app.use(express.static(viewsPath));
 app.use(bodyParser.json());
 
-mongoose
-    .connect(process.env.MONGO_URI, {useNewUrlParser: true})
-    .then(() => console.log('MongoDb connected...'))
-    .catch(err => console.log(err))
+// mongoose
+//     .connect(process.env.MONGO_URI, {useNewUrlParser: true})
+//     .then(() => console.log('MongoDb connected...'))
+//     .catch(err => console.log(err))
 
 app.get('/', (req, res) => {
     res.render('home');
