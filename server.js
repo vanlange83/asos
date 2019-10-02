@@ -20,6 +20,7 @@ app.set('view engine', 'hbs');
 
 app.use(express.static(publicPath));
 app.use(express.static(srcPath));
+app.use('http://s3.amazonaws.com/',express.static('asosimages'));
 //app.use(express.static(viewsPath));
 app.use(bodyParser.json());
 
