@@ -268,7 +268,7 @@ footer {
 }
 
 .pic1 {
-    background-image: url(../images/model1.jpg);
+    background-image: url(http://s3.amazonaws.com/asosimages/images/model1.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
